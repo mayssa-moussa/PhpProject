@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <style>
+        body {
+            background-color:black; /* Fond blanc */
+            color: black; /* Texte noir */
+            font-family: Arial, sans-serif; /* Police de caractères */
+        }
+
+        h2 {
+            color: red; /* Titre rouge */
+        }
+
+        form {
+            max-width: 400px; /* Largeur maximale du formulaire */
+            margin: 0 auto; /* Centrer le formulaire */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: red; /* Couleur du texte des étiquettes */
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: red; /* Fond rouge pour le bouton de soumission */
+            color: white; /* Texte blanc pour le bouton de soumission */
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: darkred; /* Changement de couleur au survol */
+        }
+        nav {
+            background-color: red; 
+            padding: 40px;
+            text-align: center;
+            position: fixed; /* Fixer la navbar en haut */
+            width: 100%; /* Occuper toute la largeur de l'écran */
+            top: 0; /* Position en haut de la page */
+            left: 0; /* Position à gauche de la page */
+        }
+
+        nav a {
+            color: black; 
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Ajouter Un Client</a>
+    </nav><br/><br/><br/><br/><br/><br/><br/>
+<form action="AjouterClient.php" method="post">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" placeholder="Entrez le Nom  " required><br>
+
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" name="prenom" placeholder="Entrez le PRENOM " required><br>
+    
+    <label for="age">Age :</label>
+    <input type="number" id="age" name="age" placeholder="Entrez l'age " required><br>
+
+    <label for="telephone">Téléphone :</label>
+    <input type="text" id="telephone" name="telephone" placeholder="Entrez le TELEPHONE" required><br>
+
+    <label for="email">Email :</label>
+    <input type="text" id="email" name="email" placeholder="Entrez l'Email" required><br>
+
+    <label for="mot_2_passe">Mot de passe:</label>
+    <input type="text" id="mot_2_passe" name="mot_2_passe" placeholder="Entrez le mot de passe " required><br>
+
+    <input type="submit" value="Ajouter">
+</form>
+
+</body>
+</html>

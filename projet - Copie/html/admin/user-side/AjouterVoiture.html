@@ -1,0 +1,85 @@
+﻿<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <style>
+        body {
+            background-color:black; /* Fond blanc */
+            color: black; /* Texte noir */
+            font-family: Arial, sans-serif; /* Police de caractères */
+        }
+
+        h2 {
+            color: red; /* Titre rouge */
+        }
+
+        form {
+            max-width: 400px; /* Largeur maximale du formulaire */
+            margin: 0 auto; /* Centrer le formulaire */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: red; /* Couleur du texte des étiquettes */
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: red; /* Fond rouge pour le bouton de soumission */
+            color: white; /* Texte blanc pour le bouton de soumission */
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: darkred; /* Changement de couleur au survol */
+        }
+        nav {
+            background-color: red; 
+            padding: 40px;
+            text-align: center;
+            position: fixed; /* Fixer la navbar en haut */
+            width: 100%; /* Occuper toute la largeur de l'écran */
+            top: 0; /* Position en haut de la page */
+            left: 0; /* Position à gauche de la page */
+        }
+
+        nav a {
+            color: black; 
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Ajouter Une Voiture</a>
+    </nav><br/><br/><br/><br/><br/><br/><br/>
+<form action="AjouterVoiture.php" method="post">
+    <label for="immatricule">Immatricule:</label>
+    <input type="text" id="immatricule" name="immatricule" placeholder="Entrez l'immatricule" required><br>
+
+    <label for="marque">Marque:</label>
+    <input type="text" id="marque" name="marque" placeholder="Entrez la marque " required><br>
+
+    <label for="modele">Modèle :</label>
+    <input type="text" id="modele" name="modele" placeholder="Entrez le modèle " required><br>
+
+    <label for="capacite">Capacité</label>
+    <input type="number" id="capacite" name="capacite" placeholder="Entrez le capacité" required><br>
+    <label for="tarif">Tarif</label>
+    <input type="number" id="tarif" name="tarif" placeholder="Entrez le tarif" required><br>
+
+    <label for="disponible">Disponibilité :</label>
+    <input type="text" id="disponible" name="disponible" placeholder="Cette voiture est disiponible? " required><br>
+
+    <input type="submit" value="Ajouter">
+</form>
+
+</body>
+</html>
